@@ -13,7 +13,7 @@
     margin-bottom: auto;
 }
 
-.yb-center-margin.all {
+.yb-margin-center.all {
     /*Positioning*/
     margin: auto;
 }
@@ -113,7 +113,7 @@
     transform-origin: center;
 }
 
-.yb-gridH13 {
+.yb-grd-hrz-third {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -178,26 +178,26 @@
     background-color: rgba(0, 0, 0);
 }
 
-.yb-red {
+.yb-bg-red {
     background-color: red;
 }
 
-.green {
+.yb-bg-green {
     /*Style*/
     background-color: rgb(0, 170, 0);
 }
 
-.cosmicPurple {
+.yb-bg-cosmicPurple {
     /*Style*/
     background-color: rgb(102, 51, 153);
 }
 
-.bg-blue {
+.yb-bg-blue {
     /*Style*/
     background-color: rgb(0, 0, 165);
 }
 
-.yb-gray {
+.yb-bg-gray {
     /*Style*/
     background-color: #4b4b4b;
 }
@@ -205,11 +205,11 @@
 
 
 @media screen and (prefers-color-scheme: light) {
-    .bg-autoGray {
+    .yb-bg-autoGray {
         background-color: gray;
     }
 
-    .font-autoGray {
+    .yb-font-autoGray {
         color: gray;
     }
 
@@ -220,42 +220,42 @@
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    .bg-autoGray {
+    .yb-bg-autoGray {
         background-color: rgb(35, 35, 35);
     }
 
-    .font-autoGray {
+    .yb-font-autoGray {
         color: rgb(35, 35, 35);
     }
 
-    .fill-autoGray {
+    .yb-fill-autoGray {
         fill: rgb(35, 35, 35);
     }
 }
 
-.yb-gray-light {
+.yb-bg-lightGray {
     /*Style*/
     background-color: #6b6b6b;
 }
 
-.bg-gray-dark {
+.yb-bg-darkGray {
     background-color: rgb(35, 35, 35);
 }
 
-.bg-transparent {
+.yb-bg-transparent {
     background-color: transparent;
 }
 
 /* Icon Fill Modifiers */
 @media (prefers-color-scheme: dark) {
-    .yb-autoFill {
+    .yb-fill-auto {
         fill: white;
         mix-blend-mode: difference;
     }
 }
 
 @media (prefers-color-scheme: light) {
-    .yb-autoFill {
+    .yb-fill-auto {
         fill: black;
     }
 }
@@ -288,24 +288,24 @@
 
 /* Shape Modifiers */
 
-.rounded {
+.yb-rounded {
     /*Style*/
     border-radius: 40px;
 }
 
-.squared {
+.yb-squared {
     /*Style*/
     border-radius: 5px;
 }
 
-.circle {
+.yb-circle {
     /*Style*/
     border-radius: 50%;
 }
 
 /* Border Modifiers */
 
-.border-solid {
+.yb-brdr-sol {
     /*Style*/
     border-style: solid;
 }
@@ -316,9 +316,7 @@
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(30px);
     }
-    .yb-button-wide {
-        background-color: rgb(35, 35, 35); 
-    }
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -327,66 +325,86 @@
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(30px);
     }
-    .yb-button-wide {
+    .yb-button {
         background-color: rgb(200, 200, 200); 
     }
 }
 
+.yb-tiny-wide {
+    width: 28%;
+}
 
-.border-dashed {
+.yb-small-wide {
+    width: 33%;
+}
+
+.yb-medium-wide {
+    width: 80px;
+}
+
+/*
+
+        Border Modifiers
+
+*/
+
+
+.yb-brdr-dash {
     /*Style*/
     border-style: dashed;
 }
 
-.border-dotted {
+.yb-brdr-dot {
     /*Style*/
     border-style: dotted;
 }
 
-.border-double {
+.yb-brdr-dub {
     /*Style*/
     border-style: double;
 }
 
-.border-groove {
+.yb-brdr-groove {
     /*Style*/
     border-style: groove;
 }
 
-.border-ridge {
+.yb-brdr-ridge {
     /*Style*/
     border-style: ridge;
 }
 
-.border-inset {
+.yb-brdr-inset {
     /*Style*/
     border-style: inset;
 }
 
-.border-outset {
+.yb-brdr-outset {
     /*Style*/
     border-style: outset;
 }
 
-.border-none {
+.yb-no-brdr {
     /*Style*/
     border-style: none;
 }
 
-.plainBorder {
-    /*Style*/
-    border-color: white;
+@media screen and (prefers-color-scheme: dark) {
+    .yb-brdr-clr-auto {
+        /*Style*/
+        border-color: white;
+    }
 }
 
 @media screen and (prefers-color-scheme: light) {
-    .plainBorder {
+    .yb-brdr-clr-auto {
         /*Style*/
         border-color: rgba(0, 0, 0);
     }
 }
     
 
-.rainbowBorder {
+.yb-brdr-clr-rb {
     /*Style*/
     border-image: linear-gradient(
         to right,
@@ -400,58 +418,58 @@
     ) 1;
 }
 
-.narrowBorder {
+.yb-brdr-narrow {
     /*Style*/
     border-width: 3px;
 }
 
-.mediumBorder {
+.yb-brdr-medium {
     /*Style*/
     border-width: 5px;
 }
 
-.wideBorder {
+.yb-brdr-wide {
     /*Style*/
     border-width: 7px;
 }
 
-.tiny {
+.yb-sq-tiny {
     /*Sizing*/
     height: 24px;
     width: 24px;
 }
 
-.small {
+.yb-sq-small {
     /*Sizing*/
     height: 32px;
     width: 32px;
 }
 
-.medium {
+.yb-sq-medium {
     /*Sizing*/
     height: 40px;
     width: 40px;
 }
 
-.large {
+.yb-sq-large {
     /*Sizing*/
     height: 48px;
     width: 48px;
 }
 
-.xlarge {
+.yb-sq-xLarge {
     /*Sizing*/
     height: 64px;
     width: 64px;
 }
 
-.xlarger {
+.yb-sq-xxLarge {
     /*Sizing*/
     height: 72px;
     width: 72px;
 }
 
-.xxlarge {
+.yb-sq-xxxLarge {
     /*Sizing*/
     height: 128px;
     width: 128px;
@@ -482,9 +500,15 @@
 .blend {
     mix-blend-mode: difference;
 }
-/* Text Modifiers */
+
+
+/* 
+
+        Text Modifiers 
+        
+*/
 @media (prefers-color-scheme: light) {
-    .yb-autoText {
+    .yb-txt-clr-auto {
         /*Style*/
         color: black;
     }
@@ -492,7 +516,7 @@
 }
 
 @media (prefers-color-scheme: dark){
-    .yb-autoText {
+    .yb-txt-clr-auto {
         /*Style*/
         color: white;
     }
@@ -500,109 +524,109 @@
 }
 
 /* media query for light mode text */
-.font-white {
+.yb-txt-clr-white {
     /*Style*/
     color: white;
 }
 
-.font-black {
+.yb-txt-clr-black {
     /*Style*/
     color: black;
 }
 
-.font-green {
+.yb-txt-clr-green {
     /*Style*/
     color: rgb(0, 170, 0);
 }
 
-.font-cosmicPurple {
+.yb-txt-clr-cosmicPurple {
     /*Style*/
     color: rgb(102, 51, 153);
 }
 
-.font-gray {
+.yb-txt-clr-gray {
     /*Style*/
     color: #4b4b4b;
 }
 
-.font-gray-dark {
+.yb-txt-clr-darkGray {
     /*Style*/
     color: rgb(35, 35, 35);
 }
 
 
-.font-small {
+.yb-txt-sz-s {
     /*Sizing*/
     font-size: 12px;
 }
 
-.font-medium {
+.yb-txt-sz-m {
     /*Sizing*/
     font-size: 14px;
 }
 
-.font-large {
+.yb-txt-sz-l {
     /*Sizing*/
     font-size: 18px;
 }
 
-.font-xlarge {
+.yb-txt-sz-xl {
     /*Sizing*/
     font-size: 24px;
 }
 
-.font-lightBold {
+.yb-txt-bold {
     /*Style*/
     font-weight: 600;
 }
 
-.align-left {
+.yb-align-left {
     /*Style*/
     text-align: left;
 }
 
-.align-center {
+.yb-align-center {
     /*Style*/
     text-align: center;
 }
 
-.align-right {
+.yb-align-right {
     /*Style*/
     text-align: right;
 }
 
-.font-heavy {
+.yb-txt-heavy {
     font-weight: 650;
 }
 
 
 
 /* Shadow Modifiers */
-.yb-shadow {
+.yb-dropShadow-m {
     /*Style*/
     -webkit-filter: drop-shadow(2px 2px 5px black);
     filter: drop-shadow(2px 2px 5px black);
 }
 
-.yb-shadow-large {
+.yb-dropShadow-l {
     /*Style*/
     -webkit-filter: drop-shadow(4px 4px 10px black);
     filter: drop-shadow(4px 4px 10px black);
 }
 
-.yb-shadow-small {
+.yb-dropShadow-s {
     /*Style*/
     -webkit-filter: drop-shadow(1px 1px 2px black);
     filter: drop-shadow(1px 1px 2px black);
 }
 
 /* Animation Modifiers */
-.yb-rotate {
+.yb-rotate-forever {
     /*Style*/
     animation: yb-rotate 1s linear infinite;
 }
 
-.hideUp {
+.yb-hideUp {
     transform: translateY(-100%);
     transition: 0.5s;
 }
