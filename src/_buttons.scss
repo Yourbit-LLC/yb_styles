@@ -202,7 +202,7 @@
     transition: 0.5s;
 }
 
-.yb-button-threeQuarter {
+.yb-button-75 {
     display: block;
     position: relative;
     width: 70%;
@@ -214,7 +214,7 @@
     margin-right: auto;
 }
 
-.yb-button-threeQuarter:hover {
+.yb-button-75:hover {
     background-color: white;
     color: #4b4b4b;
     transform: scale(1.03);
@@ -223,14 +223,14 @@
 }
 
 @media (prefers-color-scheme:dark) {
-    .yb-button-threeQuarter {
+    .yb-button-75 {
         color: white;
         background-color: #4b4b4b;
     }
 }
 
 @media (prefers-color-scheme:light) {
-    .yb-button-threeQuarter {
+    .yb-button-75 {
         background-color: rgb(200, 200, 200);
         color: black;
     }
@@ -238,7 +238,7 @@
 
 
 
-.yb-button-halfWidth {
+.yb-button-50 {
     display: block;
     position: relative;
     width: 50%;
@@ -250,18 +250,18 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .yb-button-halfWidth {
+    .yb-button-50 {
         background-color: #4b4b4b;
     }
 }
 
 @media (prefers-color-scheme: light) {
-    .yb-button-halfWidth {
+    .yb-button-50 {
         background-color: gray;
     }
 }
 
-.yb-button-halfWidth:hover {
+.yb-button-50:hover {
     background-color: white;
     color: #4b4b4b;
     transform: scale(1.03);
@@ -372,7 +372,7 @@
     transition: 0.8s;
 }
 
-.hangover-corner-right {
+.yb-hangover-corner-right {
     position: absolute;
     right: 0px;
     top: 0px;
